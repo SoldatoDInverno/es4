@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h3 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        table th {
+            background-color: lightblue;
+            text-align: left;
+            vertical-align: top;
+            width: 225px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <form action="Colucci_es4.php" method="POST">
+        <h3 align="center">----------Inserimento Auto----------</h2>
+        <table>
+            <tr><th>Marca</th>
+                <td><select name="Marca" id="M">
+                    <option value="Alfa Romeo">Alfa Romeo</option>
+                    <option value="Ferrari">Ferrari</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Alpine">Alpine</option>
+                </select></td>
+                </tr>
+            <tr>
+                <th>Modello</th>
+                <td><input type="text" name="Modello"></td>
+            </tr>
+            <tr>
+                <th>Stato</th>
+                <td><input type="radio" name="Stato" value="Nuova">Nuova <input type="radio" value="Usata" name="Stato">Usata</td>
+            </tr>
+            <tr>
+                <th>Anno Costruzione</th>
+                <td><select name="Anno" id="Anno">
+                    <option value="1970">1970</option>
+                    <option value="1980">1980</option>
+                    <option value="1990">1990</option>
+                    <option value="2000">2000</option>
+                    <option value="2010">2010</option>
+                    <option value="2020">2020</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>Cilindrata</th>
+                <td><input type="number" name="Cilindrata"></td>
+            </tr>
+            <tr>
+                <th>Cavalli</th>
+                <td><input type="number" name="Cavalli"></td>
+            </tr>
+            <tr>
+                <th>Prezzo</th>
+                <td><input type="number" name="Prezzo"> Euro</td>
+            </tr>
+            <tr>
+                <th>Targa</th>
+                <td><input type="text" name="Targa"></td>
+            </tr>
+            <tr>
+                <th>Accessori</th>
+                <td><input type="checkbox" name="Aria" value="Aria Condizionata">Aria Condizionata<br>
+                    <input type="checkbox" name="Vernice" value="Vernice Metalizzata">Vernice Metalizzata<br>
+                    <input type="checkbox" name="Tetto" value="Tetto in Cristallo">Tetto in Cristallo<br>
+                    <input type="checkbox" name="Impianto" value="Impianto Radio-CD">Impianto Radio-CD</td>
+            </tr>
+            <tr>
+                <th>Descrizione Aggiuntiva</th>
+                <td><textarea name="Descrizione" id="Descrizione"></textarea></td>
+            </tr>
+        </table>
+        <button type="submit" value="Invia">Invia</button>
+        <button type="reset" value="Cancella">Cancella</button>
+    </form>
+</body>
+</html>
